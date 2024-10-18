@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public function home() {
+    public function home()
+    {
         $data['page_title'] = 'Home';
         return view('home', compact('data'));
     }
@@ -18,6 +19,24 @@ class UserController extends Controller
     {
         $data['page_title'] = 'Report';
         return view('report', compact('data'));
+    }
+
+    public function kantin()
+    {
+        $data['page_title'] = 'Kantin';
+        return view('kantin', compact('data'));
+    }
+
+    public function keasramaan()
+    {
+        $data['page_title'] = 'Keasramaan';
+        return view('keasramaan', compact('data'));
+    }
+
+    public function kemahasiswaan()
+    {
+        $data['page_title'] = 'Kemahasiswaan';
+        return view('kemahasiswaan', compact('data'));
     }
 
     public function post_report(Request $request)
@@ -40,13 +59,20 @@ class UserController extends Controller
 
     }
 
-    public function login() {
+    public function history()
+    {
+
+    }
+
+    public function login()
+    {
         $data['page_title'] = 'Login';
         if (auth()->check()) {
             return redirect('/home');
         }
         return view('login', compact('data'));
     }
+
     function authentication(Request $request)
     {
         $request->validate([

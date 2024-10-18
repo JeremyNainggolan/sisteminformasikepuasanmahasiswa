@@ -18,6 +18,9 @@
                 <li class="nav-item px-lg-5">
                     <x-navbar-links href="/report" :active="request()->is('report')">Report</x-navbar-links>
                 </li>
+                <li class="nav-item px-lg-5">
+                    <x-navbar-links href="/history" :active="request()->is('history')">History</x-navbar-links>
+                </li>
             </ul>
         </div>
     </div>

@@ -21,7 +21,11 @@ Route::post('login', [UserController::class, 'authentication'])->name('login');
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [UserController::class, 'home']);
     Route::get('/report', [UserController::class, 'report']);
+    Route::get('/kantin', [UserController::class, 'kantin']);
+    Route::get('/kemahasiswaan', [UserController::class, 'kemahasiswaan']);
+    Route::get('/keasramaan', [UserController::class, 'keasramaan']);
     Route::post('/report', [UserController::class, 'post_report'])->name('report');
+    Route::get('/history', [UserController::class, 'history']);
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });
 
