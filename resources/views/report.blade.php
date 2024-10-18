@@ -5,24 +5,24 @@
     <x-navbar></x-navbar>
     <div class="container mt-4">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-8 mb-5">
                 <div class="card shadow-lg rounded-3 overflow-hidden">
                     <div class="card-header text-center bg-primary text-white">
                         <h4 class="fw-bolder text-light">Survey Kepuasan Mahasiswa</h4>
                         <p class="mb-0">Silakan beri komentar, saran, dan rating kepuasan Anda</p>
                     </div>
                     @if (session()->has('error'))
-                        <div class="text-danger">
+                        <div class="alert-danger">
                             {{ session('error') }}
                         </div>
                     @endif
                     @if (session()->has('success'))
-                        <div class="text-success">
+                        <div class="alert-success">
                             {{ session('success') }}
                         </div>
                     @endif
                     <div class="card-body bg-light">
-                        <form id="surveyForm" method="post" action="{{ route('report') }}">
+                        <form class="form" id="surveyForm" method="post" action="{{ route('report') }}">
                             @csrf
                             <div class="form-group">
                                 <label for="email">Email Address</label>

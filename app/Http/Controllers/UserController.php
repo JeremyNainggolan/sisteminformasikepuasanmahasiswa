@@ -6,6 +6,7 @@ use App\Models\Report;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -61,7 +62,9 @@ class UserController extends Controller
 
     public function history()
     {
-
+        $data['page_title'] = 'History';
+        $data['reports'] = DB::table('reports')->where('email', auth()->user()->email)->get();
+        return view('history', compact('data'));
     }
 
     public function login()
@@ -86,6 +89,13 @@ class UserController extends Controller
         }
 
         return redirect(url('login'))->with('error', 'Student ID or Password is Invalid');
+    }
+
+    function logout()
+    {
+        Session::flush();
+        Auth::logout();
+        return redirect(url('login'));
     }
 
 }

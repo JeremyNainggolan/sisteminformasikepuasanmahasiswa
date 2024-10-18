@@ -80,7 +80,7 @@
             margin-bottom: 10px;
         }
     </style>
-<x-navbar></x-navbar>
+    <x-navbar></x-navbar>
     <div class="container">
         <div class="content-wrapper">
             <h1 class="primary-color text-center">Selamat Datang di Sistem Informasi Kepuasan Mahasiswa Institut
@@ -91,19 +91,26 @@
                     <i class="fas fa-home accent-color icon"></i>
                     <h3 class="primary-color">Keasramaan</h3>
                     <p>Informasi terkait layanan dan fasilitas di asrama.</p>
-                    <button class="btn-primary">Selengkapnya</button>
+                    <div class="my-2">
+                        <a href="{{ url('/keasramaan') }}" class="btn-primary">Lihat Selengkapnya</a>
+
+                    </div>
                 </div>
                 <div class="grid-item">
                     <i class="fas fa-users accent-color icon"></i>
                     <h3 class="primary-color">Kemahasiswaan</h3>
                     <p>Informasi terkait layanan akademik mahasiswa.</p>
-                    <button class="btn-primary">Selengkapnya</button>
+                    <div class="my-2">
+                        <a href="{{ url('/kemahasiswaan') }}" class="btn-primary">Lihat Selengkapnya</a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <i class="fas fa-utensils accent-color icon"></i>
                     <h3 class="primary-color">Kantin</h3>
                     <p>Informasi terkait layanan kantin.</p>
-                    <button class="btn-primary">Selengkapnya</button>
+                    <div class="my-2">
+                        <a href="{{ url('/kantin') }}" class="btn-primary my-2">Lihat Selengkapnya</a>
+                    </div>
                 </div>
             </div>
         </div>

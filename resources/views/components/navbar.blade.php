@@ -13,13 +13,16 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item px-lg-5">
-                    <x-navbar-links href="/home" :active="request()->is('home')">Home</x-navbar-links>
+                    <x-navbar-links href="/home" :active="request()->is('home') || request()->is('kemahasiswaan') || request()->is('keasramaan') || request()->is('kantin')">Home</x-navbar-links>
                 </li>
                 <li class="nav-item px-lg-5">
                     <x-navbar-links href="/report" :active="request()->is('report')">Report</x-navbar-links>
                 </li>
                 <li class="nav-item px-lg-5">
                     <x-navbar-links href="/history" :active="request()->is('history')">History</x-navbar-links>
+                </li>
+                <li class="nav-item px-lg-5">
+                    <a href="{{ route('logout') }}" class="nav-link text-secondary fw-bolder">Log Out</a>
                 </li>
             </ul>
         </div>
