@@ -5,20 +5,6 @@ use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('login', [UserController::class, 'login']);
-Route::post('login', [UserController::class, 'auth'])->name('login');
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/report', function () {
-    return view('home');
-});
-
-Route::get('/profile', function () {
-    return view('home');
-});
 
 Route::prefix('admin')->group(function () {
     Route::get('login', [AdminController::class, 'login']);
@@ -27,6 +13,15 @@ Route::prefix('admin')->group(function () {
     Route::middleware(['auth', 'user-access:admin'])->group(function () {
         Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
     });
+});
+
+Route::get('login', [UserController::class, 'login']);
+Route::post('login', [UserController::class, 'authentication'])->name('login');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [UserController::class, 'home']);
+    Route::get('/report', [UserController::class, 'rent']);
+    Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });
 
 Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');

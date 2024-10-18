@@ -14,7 +14,7 @@ class UserController extends Controller
     public function login() {
         $data['page_title'] = 'Login';
         if (auth()->check()) {
-            return redirect('/');
+            return redirect('/home');
         }
         return view('login', compact('data'));
     }
