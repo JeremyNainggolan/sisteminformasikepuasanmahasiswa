@@ -19,7 +19,6 @@
                             <li><strong>Lingkungan Nyaman:</strong> Kantin kami dirancang untuk memberikan suasana yang nyaman bagi mahasiswa untuk makan dan bersosialisasi.</li>
                             <li><strong>Kebersihan Terjaga:</strong> Kami selalu menjaga kebersihan kantin dan memastikan semua area bersih dan higienis.</li>
                             <li><strong>Pelayanan Cepat:</strong> Layanan di kantin kami cepat dan efisien, sehingga mahasiswa dapat menikmati makanan mereka tanpa harus menunggu lama.</li>
-                            <li><strong>Akses Wi-Fi:</strong> Kantin menyediakan akses Wi-Fi gratis, memungkinkan mahasiswa untuk tetap terhubung dan menyelesaikan tugas selama berada di kantin.</li>
                             <li><strong>Tempat Duduk Luas:</strong> Tersedia berbagai pilihan tempat duduk yang dapat menampung individu maupun kelompok.</li>
                         </ul>
                     </div>
