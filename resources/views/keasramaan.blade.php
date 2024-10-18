@@ -1,47 +1,39 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Keasramaan - Homepage</title>
-    <style>
-        .card {
-            margin: 20px;
-        }
-        .row.justify-content-center {
-            justify-content: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="text-center my-4">Keasramaan</h1>
-        <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-4">
+@extends('layouts/user-app')
+
+@section('title', 'Keasramaan')
+
+@section('content')
+    <x-navbar></x-navbar>
+
+    <div class="container mt-5">
+        <!-- Bagian Detail Keasramaan -->
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Detail Keasramaan</h5>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Asrama Putra</h5>
-                        <p class="card-text">Asrama putra dilengkapi dengan fasilitas seperti kamar tidur bersama (atau kamar pribadi tergantung kebijakan asrama), ruang belajar, kamar mandi, ruang rekreasi, dapur, dan area olahraga.</p>
+                        <p>Keasramaan di kampus kami menyediakan berbagai fasilitas dan layanan untuk mahasiswa:</p>
+                        <ul>
+                            <li><strong>Kamar Tidur:</strong> Tersedia kamar tidur dengan opsi kamar pribadi atau bersama, sesuai dengan kebijakan keasramaan.</li>
+                            <li><strong>Ruang Belajar:</strong> Ruang belajar yang nyaman disediakan untuk mendukung kegiatan belajar mahasiswa.</li>
+                            <li><strong>Fasilitas Rekreasi:</strong> Area rekreasi yang menyenangkan untuk bersantai dan bersosialisasi dengan teman-teman.</li>
+                            <li><strong>Kebersihan Terjaga:</strong> Kami menjaga kebersihan area keasramaan agar selalu nyaman dan higienis.</li>
+                            <li><strong>Keamanan:</strong> Keamanan asrama dijaga 24 jam untuk memberikan rasa aman bagi semua penghuni.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Asrama Putri</h5>
-                        <p class="card-text">Asrama putri umumnya serupa dengan asrama putra, tetapi terkadang ada beberapa tambahan seperti ruang khusus untuk kegiatan wanita (misalnya, ruang yoga atau area bersantai). Fasilitas keamanan juga sering diperketat.</p>
-                    </div>
+        </div>
+
+        <!-- Info Tambahan -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="alert alert-info">
+                    Untuk informasi lebih lanjut mengenai layanan keasramaan, silakan hubungi pihak pengelola asrama.
                 </div>
-            </div>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+@endsection
