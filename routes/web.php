@@ -20,7 +20,8 @@ Route::post('login', [UserController::class, 'authentication'])->name('login');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [UserController::class, 'home']);
-    Route::get('/report', [UserController::class, 'rent']);
+    Route::get('/report', [UserController::class, 'report']);
+    Route::post('/report', [UserController::class, 'post_report'])->name('report');
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });
 

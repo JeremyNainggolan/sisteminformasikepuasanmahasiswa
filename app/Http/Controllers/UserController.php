@@ -8,7 +8,22 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function home() {
-        return view('home');
+        $data['page_title'] = 'Home';
+        return view('home', compact('data'));
+    }
+
+    public function report()
+    {
+        $data['page_title'] = 'Report';
+        return view('report', compact('data'));
+    }
+
+    public function post_report(Request $request)
+    {
+        echo '<pre>';
+        print_r($_POST);
+        echo '<pre>';
+        exit();
     }
 
     public function login() {
