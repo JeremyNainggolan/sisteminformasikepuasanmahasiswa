@@ -89,13 +89,13 @@
                 <div class="grid-item">
                     <i class="fas fa-users accent-color icon"></i>
                     <h3 class="primary-color">Kemahasiswaan</h3>
-                    <p>Informasi dan layanan akademik mahasiswa.</p>
+                    <p>Informasi terkait layanan akademik mahasiswa.</p>
                     <button class="btn-primary">Selengkapnya</button>
                 </div>
                 <div class="grid-item">
                     <i class="fas fa-utensils accent-color icon"></i>
                     <h3 class="primary-color">Kantin</h3>
-                    <p>Informasi mengenai layanan kantin.</p>
+                    <p>Informasi terkait layanan kantin.</p>
                     <button class="btn-primary">Selengkapnya</button>
                 </div>
             </div>
