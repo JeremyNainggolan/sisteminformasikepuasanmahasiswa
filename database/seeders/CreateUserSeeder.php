@@ -15,6 +15,7 @@ class CreateUserSeeder extends Seeder
     {
         $users = array(
             array(
+                'nim' => '12S22008',
                 'name' => 'Rahel Simanjuntak',
                 'email' => 'rahelsimanjuntak2909@gmail.com',
                 'username' => 'rahelsimanjuntak2909',
@@ -23,6 +24,7 @@ class CreateUserSeeder extends Seeder
                 'password' => Hash::make('simanjuntak123'),
             ),
             array(
+                'nim' => '12S22021',
                 'name' => 'Krisnia Siahaan',
                 'email' => 'krisniacalysta@gmail.com',
                 'username' => 'krisniasiahaan',
@@ -31,6 +33,7 @@ class CreateUserSeeder extends Seeder
                 'password' => Hash::make('krisnia123'),
             ),
             array(
+                'nim' => '12S22040',
                 'name' => 'Gracia Purba',
                 'email' => 'graciapurba278@gmail.com',
                 'username' => 'graciapurba27',
@@ -39,6 +42,7 @@ class CreateUserSeeder extends Seeder
                 'password' => Hash::make('graciapurba123'),
             ),
             array(
+                'nim' => '12S22002',
                 'name' => 'Jeremy Nainggolan',
                 'email' => 'jeremy.nainggolann@gmail.com',
                 'username' => 'mart.jeremiah',
