@@ -46,9 +46,9 @@
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="mb-4 text-sm mx-auto">
+
                                         <a href="{{ route('google-auth') }}" class="text-decoration-none"><i
-                                                class="bi bi-google mx-2"></i></a>
-                                        <a><i class="bi bi-github mx-2"></i></a>
+                                                class="bi bi-google mx-2"></i>Login with Google Account</a>
                                     </p>
                                 </div>
                             </div>

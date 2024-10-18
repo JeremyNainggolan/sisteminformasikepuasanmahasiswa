@@ -6,14 +6,14 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::prefix('admin')->group(function () {
-    Route::get('login', [AdminController::class, 'login']);
-    Route::post('login', [AdminController::class, 'post_login'])->name('admin.login');
-
-    Route::middleware(['auth', 'user-access:admin'])->group(function () {
-        Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
-    });
-});
+//Route::prefix('admin')->group(function () {
+//    Route::get('login', [AdminController::class, 'login']);
+//    Route::post('login', [AdminController::class, 'post_login'])->name('admin.login');
+//
+//    Route::middleware(['auth', 'user-access:admin'])->group(function () {
+//        Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
+//    });
+//});
 
 Route::get('login', [UserController::class, 'login']);
 Route::post('login', [UserController::class, 'authentication'])->name('login');

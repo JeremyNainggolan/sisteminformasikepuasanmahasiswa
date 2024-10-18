@@ -95,17 +95,6 @@
                                 <button type="submit" class="btn btn-lg btn-primary mt-4">Kirim Survey</button>
                             </div>
                         </form>
-
-
-                        <div id="surveyResult" class="mt-4" style="display:none;">
-                            <h5 class="font-weight-bolder text-primary">Hasil Survey</h5>
-                            <div class="result-item"><strong>Email:</strong> <span id="resultEmail"></span></div>
-                            <div class="result-item"><strong>Komentar dan Saran:</strong> <span
-                                    id="resultComments"></span></div>
-                            <div class="result-item"><strong>Rating:</strong> <span id="resultRating"></span></div>
-                            <div class="result-item"><strong>Area yang Dinilai:</strong> <span id="resultArea"></span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
