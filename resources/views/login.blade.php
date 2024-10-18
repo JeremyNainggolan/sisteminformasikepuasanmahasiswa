@@ -1,5 +1,5 @@
 @extends('layouts/user-app')
-@section('title', 'Dashboard')
+@section('title', $data['page_title'])
 @section('content')
     <main class="main-content mt-0">
         <section>
@@ -11,15 +11,15 @@
                                 <img src="{{ asset('svg/logo-no-background.svg') }}" class="card-img-top pt-5">
                                 <div class="card-header pb-0 text-start">
                                     <h4 class="font-weight-bolder">Sign In</h4>
-                                    <p class="mb-0">Enter your email and password to sign in</p>
+                                    <p class="mb-0">Enter your Student ID and password to sign in</p>
                                 </div>
                                 <div class="card-body">
-                                    <form role="form" method="post" action="{{ route('admin.login') }}">
+                                    <form role="form" method="post" action="{{ route('login') }}">
                                         <div class="mb-3">
-                                            <input type="email" class="form-control form-control-lg" placeholder="Email"
-                                                   aria-label="Email">
+                                            <input type="text" class="form-control form-control-lg" placeholder="Student ID"
+                                                   aria-label="NIM">
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-2">
                                             <input type="password" class="form-control form-control-lg"
                                                    placeholder="Password"
                                                    aria-label="Password">
@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="mb-4 text-sm mx-auto">
-                                        <a><i class="bi bi-google mx-2"></i></a>
+                                        <a href="{{ route('google-auth') }}" class="text-decoration-none"><i class="bi bi-google mx-2"></i></a>
                                         <a><i class="bi bi-github mx-2"></i></a>
                                     </p>
                                 </div>
