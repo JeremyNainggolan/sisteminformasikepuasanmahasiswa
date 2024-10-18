@@ -83,7 +83,7 @@
                 <div class="grid-item">
                     <i class="fas fa-home accent-color icon"></i>
                     <h3 class="primary-color">Keasramaan</h3>
-                    <p>Informasi terkait layanan dan fasilitas di asrama mahasiswa.</p>
+                    <p>Informasi terkait layanan dan fasilitas di asrama.</p>
                     <button class="btn-primary">Selengkapnya</button>
                 </div>
                 <div class="grid-item">
