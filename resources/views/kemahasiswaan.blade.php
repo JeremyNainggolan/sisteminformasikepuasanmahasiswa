@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <p>Beberapa peraturan akademik yang perlu diketahui oleh seluruh mahasiswa:</p>
                         <ul>
-                            <li>Mahasiswa wajib hadir minimal 75% dari total pertemuan untuk dapat mengikuti ujian akhir.</li>
+                            <li>Mahasiswa wajib hadir minimal 85% dari total pertemuan untuk dapat mengikuti ujian akhir.</li>
                             <li>Pengajuan cuti akademik hanya dapat dilakukan maksimal satu kali dalam masa studi.</li>
                             <li>Tidak diperbolehkan melakukan plagiarisme dalam bentuk apapun pada tugas atau ujian.</li>
                             <li>Setiap mahasiswa diwajibkan untuk menyelesaikan minimal 144 SKS untuk lulus.</li>
@@ -35,11 +35,11 @@
                     <div class="card-body">
                         <p>Beberapa event yang akan diadakan dalam waktu dekat:</p>
                         <ul>
-                            <li><strong>Seminar Teknologi Informasi</strong> - Tanggal: 25 Oktober 2024</li>
-                            <li><strong>Workshop Kewirausahaan</strong> - Tanggal: 30 Oktober 2024</li>
-                            <li><strong>Kompetisi Debat Mahasiswa</strong> - Tanggal: 5 November 2024</li>
-                            <li><strong>Acara Donor Darah</strong> - Tanggal: 12 November 2024</li>
-                            <li><strong>Pentas Seni Kampus</strong> - Tanggal: 20 November 2024</li>
+                            <li><strong>Seminar Teknologi Informasi</strong> 
+                            <li><strong>Workshop Kewirausahaan</strong> 
+                            <li><strong>Kompetisi Debat Mahasiswa</strong> 
+                            <li><strong>Acara Donor Darah</strong> 
+                            <li><strong>Pentas Seni Kampus</strong> 
                         </ul>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <div class="alert alert-info">
-                    Untuk informasi lebih lanjut mengenai peraturan akademik dan pendaftaran event, silakan hubungi Biro Kemahasiswaan.
+                    Untuk informasi lebih lanjut mengenai peraturan akademik dan pendaftaran event, silakan hubungi pihak Kemahasiswaan.
                 </div>
             </div>
         </div>
