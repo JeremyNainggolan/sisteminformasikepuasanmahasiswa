@@ -14,18 +14,31 @@
                                     <p class="mb-0">Enter your Student ID and password to sign in</p>
                                 </div>
                                 <div class="card-body">
+                                    @if (session()->has('error'))
+                                        <div class="text-danger">
+                                            {{ session('error') }}
+                                        </div>
+                                    @endif
+                                    @if (session()->has('success'))
+                                        <div class="text-success">
+                                            {{ session('success') }}
+                                        </div>
+                                    @endif
                                     <form role="form" method="post" action="{{ route('login') }}">
+                                        @csrf
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-lg" placeholder="Student ID"
+                                            <input type="text" class="form-control form-control-lg"
+                                                   placeholder="Student ID" name="nim" id="nim"
                                                    aria-label="NIM">
                                         </div>
                                         <div class="mb-2">
-                                            <input type="password" class="form-control form-control-lg"
+                                            <input type="password" class="form-control form-control-lg" id="password"
+                                                   name="password"
                                                    placeholder="Password"
                                                    aria-label="Password">
                                         </div>
                                         <div class="text-center">
-                                            <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
+                                            <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
                                                 Sign in
                                             </button>
                                         </div>
@@ -33,7 +46,8 @@
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                     <p class="mb-4 text-sm mx-auto">
-                                        <a href="{{ route('google-auth') }}" class="text-decoration-none"><i class="bi bi-google mx-2"></i></a>
+                                        <a href="{{ route('google-auth') }}" class="text-decoration-none"><i
+                                                class="bi bi-google mx-2"></i></a>
                                         <a><i class="bi bi-github mx-2"></i></a>
                                     </p>
                                 </div>
