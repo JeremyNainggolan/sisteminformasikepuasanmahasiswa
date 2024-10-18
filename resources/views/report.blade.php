@@ -11,12 +11,29 @@
                         <h4 class="fw-bolder text-light">Survey Kepuasan Mahasiswa</h4>
                         <p class="mb-0">Silakan beri komentar, saran, dan rating kepuasan Anda</p>
                     </div>
+                    @if (session()->has('error'))
+                        <div class="text-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+                    @if (session()->has('success'))
+                        <div class="text-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     <div class="card-body bg-light">
                         <form id="surveyForm" method="post" action="{{ route('report') }}">
                             @csrf
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com"
+                                <input type="email" class="form-control" id="email" name="email"
+                                       placeholder="example@gmail.com"
+                                       required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="Full Name"
                                        required>
                             </div>
 
@@ -32,9 +49,9 @@
                                 <label>Pilih kategori yang ingin Anda nilai</label>
                                 <select class="form-control" id="area" required name="kategori">
                                     <option value="">Kategori</option>
+                                    <option value="kantin">Kantin</option>
                                     <option value="keasramaan">Keasramaan</option>
                                     <option value="kemahasiswaan">Kemahasiswaan</option>
-                                    <option value="kantin">Kantin</option>
                                 </select>
                             </div>
 

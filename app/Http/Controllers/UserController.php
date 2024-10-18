@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Report;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -20,10 +22,22 @@ class UserController extends Controller
 
     public function post_report(Request $request)
     {
-        echo '<pre>';
-        print_r($_POST);
-        echo '<pre>';
-        exit();
+        $request->validate([
+            'email' => 'required|email',
+            'name' => 'required',
+            'inlineRadioOptions' => 'required',
+        ]);
+
+        $data['name'] = $request->name;
+        $data['email'] = $request->email;
+        $data['comment'] = $request->comment;
+        $data['kategori'] = $request->kategori;
+        $data['rating'] = $request->inlineRadioOptions;
+
+        DB::table('reports')->insert($data);
+
+        return redirect(url('home'))->with('success', 'Report Berhasil Dikirim');
+
     }
 
     public function login() {

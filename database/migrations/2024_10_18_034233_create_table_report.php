@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id(); // ID Laporan
-            $table->string('student_name'); // Nama Mahasiswa
-            $table->unsignedTinyInteger('overall_rating'); // Rating Keseluruhan (1-5)
-            $table->text('comments_suggestions'); // Komentar dan Saran
-            $table->kategori(); // Kategori 
+            $table->string('name'); // Nama Mahasiswa
+            $table->string('email'); // Nama Mahasiswa
+            $table->string('comment'); // Nama Mahasiswa
+            $table->tinyInteger('rating'); // Komentar dan Saran
+            $table->enum('kategori', ['keasramaan', 'kemahasiswaan', 'kantin']); // Kategori
+            $table->timestamps();
         });
     }
 

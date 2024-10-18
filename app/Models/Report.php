@@ -10,20 +10,20 @@ class Report extends Model
 {
     use HasFactory;
 
-    protected $table = "reports";
-
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        'student_name',           // Nama Mahasiswa
-        'overall_rating',         // Rating Keseluruhan (1-5)
-        'report_type',            // Tipe Laporan (komplain, pujian, saran perbaikan)
-        'comments_suggestions',   // Komentar dan Saran
-        'kategori',           // Kategori(Keasrmaan, Kemahasiswaan, Kantin)
+        'name',
+        'email',
+        'comment',
+        'kategori',
+        'rating',
     ];
+
+    protected $table = "reports";
 
     /**
      * The attributes that should be cast to native types.
