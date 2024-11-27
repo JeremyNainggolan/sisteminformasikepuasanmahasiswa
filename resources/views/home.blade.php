@@ -100,7 +100,7 @@
                     <i class="fas fa-users accent-color icon"></i>
                     <h3 class="primary-color">Kemahasiswaan</h3>
                     <p>Informasi terkait layanan akademik mahasiswa.</p>
-                    <div class="my-2">
+                 <div class="my-2">
                         <a href="{{ url('/kemahasiswaan') }}" class="btn-primary">Lihat Selengkapnya</a>
                     </div>
                 </div>
